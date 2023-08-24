@@ -1,0 +1,13 @@
+# Disables dynamic pane titles
+
+# Makes sure tmux is installed
+if ! command -v tmux &> /dev/null
+then
+    >&2 echo "tmux is not available"
+    exit 1
+fi
+
+# Turn pane titles off
+tmux set pane-border-status off
+tmux set-hook window-layout-changed ""
+
