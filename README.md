@@ -1,8 +1,9 @@
 # Tmux 101
 Welcome to tmux 101! In this guide I'll show you the basics of how to navigate it and don't die trying.
 
-> **&#9432;** **NOTE:** Yes, you can use the mouse for moving around. However, I'd recommend letting go
-and embrase your keyboard. Lot's of things will become easier once you have build enough muscle memory.
+> **&#9432;** **NOTE:** Yes, you can use the mouse for moving around, check it out down below. However,
+I'd recommend letting go and embrase your keyboard. Lots of things will become easier once you have
+build enough muscle memory.
 
 ## Installation
 You can refer to the [tmux wiki](https://github.com/tmux/tmux/wiki/Installing) for the most up to date
@@ -106,6 +107,17 @@ or
 <prefix> + :choose-session
 ```
 
+#### Show pane title
+Show pane titles
+```
+<prefix> + :set pane-border-status top
+```
+
+Change name of the pane
+```
+<prefix> + :select-pane -T my-pane-title
+```
+
 ## Mouse mode
 ...
 
@@ -143,3 +155,7 @@ bind % split-window -h -c "#{pane_current_path}"
 ```
 set -g history-limit 50000
 ```
+
+## Custom quality of life
+#### Custom pane titles
+Bash scripts at `dotfiles/.local/bon`.
