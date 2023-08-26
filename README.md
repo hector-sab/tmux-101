@@ -1,9 +1,10 @@
 # Tmux 101
-Welcome to tmux 101! In this guide I'll show you the basics of how to navigate it and don't die trying.
+Welcome to tmux 101! In this guide I'll attempt to show you all the basics you need to feel comfortable
+using tmux.
 
-> **&#9432;** **NOTE:** Yes, you can use the mouse for moving around, check it out down below. However,
-I'd recommend letting go and embrase your keyboard. Lots of things will become easier once you have
-build enough muscle memory.
+> **&#9432;** **NOTE:** The keyboard is the primary way of using tmux. If you are more interested on using
+your mouse, keep reading as it's possible to some extend. However, I'd recommend letting go and embrase
+your fingers. Lots of things will become easier once you have build enough muscle memory.
 
 ## Installation
 You can refer to the [tmux wiki](https://github.com/tmux/tmux/wiki/Installing) for the most up to date
