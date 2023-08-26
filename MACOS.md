@@ -6,23 +6,24 @@ This can be solved by generating the terminfo ourselves with a new version of nc
 ## Generate tmux terminfo
 ```
 XTERM_INFO_SRC_PATH="$HOME/tmux-256color.src"
+
 # MacPorts
-$ /opt/local/bin/infocmp -x tmux-256color > $XTERM_INFO_SRC_PATH
+/opt/local/bin/infocmp -x tmux-256color > $XTERM_INFO_SRC_PATH
 
 # Homebrew
-$ /usr/local/opt/ncurses/bin/infocmp -x tmux-256color > $XTERM_INFO_SRC_PATH
+/usr/local/opt/ncurses/bin/infocmp -x tmux-256color > $XTERM_INFO_SRC_PATH
 ```
 
 ## Patch the tmux terminfo
 ```
 sed -i 's/pairs#0x10000/pairs#32767/' $XTEMR_INFO_SRC_PATH
-ed -i 's/pairs#65536/pairs#32767/' $XTEMR_INFO_SRC_PATH
+sed -i 's/pairs#65536/pairs#32767/' $XTEMR_INFO_SRC_PATH
 ```
 
 ## Install terminfo for our user
 ```
-USER_TERMINFO_DIRS=$HOME/.local/share/terminfo
-/usr/bin/tic -x -o $USER_TERMINFO_DIRS $XTEMR_INFO_SRC_PATH
+$ USER_TERMINFO_DIRS=$HOME/.local/share/terminfo
+$ /usr/bin/tic -x -o $USER_TERMINFO_DIRS $XTEMR_INFO_SRC_PATH
 ```
 
 ## Export it into your zshrc/bashrc
