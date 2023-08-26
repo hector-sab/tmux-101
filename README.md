@@ -21,14 +21,19 @@ $ tmux
 ```
 
 #### Create a window (a.k.a. tab)
-Once inside tmux, it's possible to create tabs/windows. For you need to:
+Once inside tmux, it's possible to create windows/tabs. For that, you need to:
 - press the key `control`
-- without releasing press `b`, and releasing both keys after
+- without releasing `control`, press `b` and release both keys
 - press `c`
 
-Such keybinding is also expressed as below.
+Such keybinding is also expressed as below
 ```
 C-b + c
+```
+
+You can achieve the same result by doing
+```
+C-b + :new-window
 ```
 
 #### Rename a window
