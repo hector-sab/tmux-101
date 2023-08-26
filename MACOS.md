@@ -1,7 +1,7 @@
 # Updating MacOs TermInfo
 MacOs provides an outdated version of [ncurses](https://en.wikipedia.org/wiki/Ncurses), which does not contain details for dealing with `tmux-256color` terminfo. This can cause issues like making the `DEL` key not delete anything.
 
-This can be solved by generating the terminfo ourselved with a new version of ncurses provided by hombrew/macports. The steps are as follow below. Props to [Gregory](https://gpanders.com/blog/the-definitive-guide-to-using-tmux-256color-on-macos/) for sharing this solution.
+This can be solved by generating the terminfo ourselves with a new version of ncurses provided by hombrew/macports. The steps are as follow below. Props to [Gregory](https://gpanders.com/blog/the-definitive-guide-to-using-tmux-256color-on-macos/) for sharing this solution.
 
 ## Generate tmux terminfo
 ```

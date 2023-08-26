@@ -6,6 +6,8 @@ using tmux.
 your mouse, keep reading as it's possible to some extend. However, I'd recommend letting go and embrase
 your fingers. Lots of things will become easier once you have build enough muscle memory.
 
+> **&#9432;** **NOTE 2:** If you are in MacOs, take a look at this [extra steps](MACOS.md).
+
 ## Installation
 You can refer to the [tmux wiki](https://github.com/tmux/tmux/wiki/Installing) for the most up to date
 information on how to install it on your system.
