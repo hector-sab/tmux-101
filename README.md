@@ -127,7 +127,17 @@ Change name of the pane
 ```
 
 ## Mouse mode
-...
+Enable the mouse mode by setting the `mouse` option to `on`. Now try right clicking around
+the terminal to see what are the options. Hint: right click on the session indicator and
+on the window names. You can also change the focused window/pane by clicking on them, or
+resize panes by drag and droping their edges. Disable it by setting it to `off`.
+```
+# Turn mouse on
+<prefix> + :set mouse on
+
+# Turn mouse off
+<prefix> + :set mouse off
+```
 
 ## Quality of life
 These are configurations I like to have setup.
