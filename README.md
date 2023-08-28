@@ -143,10 +143,15 @@ resize panes by drag and droping their edges. Disable it by setting it to `off`.
 These are configurations I like to have setup.
 
 #### Set index starting from 1
+These two options allow you to change the start number of the index assigned to
+all windows and panes on tmux.
 ```
 set -g base-index 1
 set -g pane-base-index 1
 ```
+For example, take a look at the screenshots below. The image on the left shows the
+default behavior, and the one in the right has the setting from above enabled.
+You will notice how both pane and window indexes start from either zero (left) or one (right).
 
 ![](media/tui-indexes-default.png)  |  ![](media/tui-indexes-1-based.png)
 :-------------------------:|:-------------------------:
