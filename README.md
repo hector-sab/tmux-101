@@ -149,7 +149,9 @@ all windows and panes on tmux.
 set -g base-index 1
 set -g pane-base-index 1
 ```
-For example, take a look at the screenshots below. The image on the left shows the
+I find this index numbering useful when changing quickly to a different pane (`<prefix> + q + <pane-index-number>`) or window (`<prefix> + <window-index-number>`).
+
+Take a look at the screenshots below. The image on the left shows the
 default behavior, and the one in the right has the setting from above enabled.
 You will notice how both pane and window indexes start from either zero (left) or one (right).
 
@@ -163,31 +165,47 @@ be changed to be 1-based as what's shown is in reallity the session id, and the
 maintainers seem to be unwilling to add an index here.
 
 #### Attach to another session after closing last window
+This option allow tmux to change to a different session in case you close all
+the windows/panes of the current one. If not enabled, it will deatach from tmux
+and will require you to manually attach to any of the existing sessions.
+
 ```
 set -g detach-on-destroy no-detached
 ```
 
 #### Disable bell sounds
+As the title suggests, disables tmux from making unrequested noises.
+
 ```
 set -g bell-action none
 ```
 
 #### Create new windows with current working directory
+When creating new windows the default path used for the new terminal is the one
+from where tmux was opened. This makes sure that any new window is created at
+the path of the current active pane.
+
 ```
 bind c new-window -c "#{pane_current_path}"
 ```
 
 #### Split panes with current working directory
+By default, tmux creates new panes at the path where tmux was first executed. This
+makes sure to create panes using the current active pane's path.
+
 ```
 bind '"' split-window -v -c "#{pane_current_path}"
 bind % split-window -h -c "#{pane_current_path}"
 ```
 
 #### Increase history
+Allow tmux to store more lines in the buffer of each pane.
 ```
 set -g history-limit 50000
 ```
 
+This option is useful if you like scrolling back to a few minutes/hours back in the past to see what was typed in the terminal and what was the output.
+
 ## Custom quality of life
 #### Custom pane titles
-Bash scripts at `dotfiles/.local/bon`.
+Bash scripts at `dotfiles/.local/bin`.
