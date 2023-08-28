@@ -148,6 +148,15 @@ set -g base-index 1
 set -g pane-base-index 1
 ```
 
+![](media/tui-indexes-default.png)  |  ![](media/tui-index-1-based)
+:-------------------------:|:-------------------------:
+Zero-base index             |  One-base index
+
+
+> **&#9432;** **NOTE:** The session "index" shown when doing `<prefix> + s` cannot
+be changed to be 1-based as what's shown is in reallity the session id, and the
+maintainers seem to be unwilling to add an index here.
+
 #### Attach to another session after closing last window
 ```
 set -g detach-on-destroy no-detached
