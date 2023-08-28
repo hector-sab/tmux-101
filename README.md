@@ -148,7 +148,7 @@ set -g base-index 1
 set -g pane-base-index 1
 ```
 
-![](media/tui-indexes-default.png)  |  ![](media/tui-index-1-based.png)
+![](media/tui-indexes-default.png)  |  ![](media/tui-indexes-1-based.png)
 :-------------------------:|:-------------------------:
 Zero-base index             |  One-base index
 
