@@ -3,8 +3,8 @@ Welcome to tmux 101! In this guide I'll attempt to show you all the basics you n
 using tmux.
 
 > **&#9432;** **NOTE:** The keyboard is the primary way of using tmux. If you are more interested on using
-your mouse, keep reading as it's possible to some extend. However, I'd recommend letting go and embrase
-your fingers. Lots of things will become easier once you have build enough muscle memory.
+your mouse, keep reading as it's possible to some extent. However, I'd recommend letting go and embrase
+your fingers. Lots of things will become easier once you have built enough muscle memory.
 
 > **&#9432;** **NOTE 2:** If you are in MacOs, take a look at this [extra steps](MACOS.md).
 
@@ -26,7 +26,7 @@ Once inside tmux, it's possible to create windows/tabs. For that, you need to:
 - without releasing `control`, press `b` and release both keys
 - press `c`
 
-Such keybinding is also expressed as below
+Such key binding is also expressed as below
 ```
 C-b + c
 ```
@@ -46,7 +46,7 @@ C-b + ,
 
 #### Create panes
 In case there's a need to see more than one terminal at the same time, it's possible
-to make a vertical split using the keybinding below.
+to make a vertical split using the key binding below.
 ```
 C-b + %
 ```
@@ -57,7 +57,7 @@ C-b + "
 ```
 
 #### Prefix
-As you have seen, `C-b + <key>` for contorling tmux behavior. `C-b` (refered to as `Ctrl-b` in some places) is also
+As you have seen, `C-b + <key>` for contrlling tmux behavior. `C-b` (referred to as `Ctrl-b` in some places) is also
 known as `<prefix>` and it can be configured to be anything.
 
 > **&#9432;** **NOTE:** If you ask me, it's better to keep the default prefix.
@@ -128,9 +128,9 @@ Change name of the pane
 
 ## Mouse mode
 Enable the mouse mode by setting the `mouse` option to `on`. Now try right clicking around
-the terminal to see what are the options. Hint: right click on the session indicator and
+the terminal to see what the options are. Hint: right click on the session indicator and
 on the window names. You can also change the focused window/pane by clicking on them, or
-resize panes by drag and droping their edges. Disable it by setting it to `off`.
+resize panes by drag and dropping their edges. Disable it by setting it to `off`.
 ```
 # Turn mouse on
 <prefix> + :set mouse on
@@ -161,12 +161,12 @@ Zero-base index             |  One-base index
 
 
 > **&#9432;** **NOTE:** The session "index" shown when doing `<prefix> + s` cannot
-be changed to be 1-based as what's shown is in reallity the session id, and the
+be changed to be 1-based as what's shown is in reality the session id, and the
 maintainers seem to be unwilling to add an index here.
 
 #### Attach to another session after closing last window
-This option allow tmux to change to a different session in case you close all
-the windows/panes of the current one. If not enabled, it will deatach from tmux
+This option allows tmux to change to a different session in case you close all
+the windows/panes of the current one. If not enabled, it will detach from tmux
 and will require you to manually attach to any of the existing sessions.
 
 ```
@@ -209,3 +209,9 @@ This option is useful if you like scrolling back to a few minutes/hours back in 
 ## Custom quality of life
 #### Custom pane titles
 Bash scripts at `dotfiles/.local/bin`.
+
+# Other resources
+The official tmux wiki page has lots of information on how to use tmux that I'd recommend checking out:
+- [Getting started](https://github.com/tmux/tmux/wiki/Getting-Started)
+- [Clipboard](https://github.com/tmux/tmux/wiki/Clipboard)
+- [FAQ](https://github.com/tmux/tmux/wiki/FAQ)
