@@ -215,3 +215,4 @@ The official tmux wiki page has lots of information on how to use tmux that I'd 
 - [Getting started](https://github.com/tmux/tmux/wiki/Getting-Started)
 - [Clipboard](https://github.com/tmux/tmux/wiki/Clipboard)
 - [FAQ](https://github.com/tmux/tmux/wiki/FAQ)
+- [Advanced use](https://github.com/tmux/tmux/wiki/Advanced-Use)
